@@ -1,0 +1,119 @@
+body    {
+    margin-left: 50px;
+    margin-right: 50px;
+    font-family: helvetica, arial;
+}
+h1  {
+    color: #659EC7;
+    display: inline-block;
+    font-family: helvetica, arial;
+}
+h2  {
+    color: #659EC7;
+    font-family: helvetica, arial;
+}
+h3  {
+    color: #659EC7;
+    font-family: helvetica, arial;
+    font-size: 18px;
+}
+a.button    {
+    float: right;
+    background-color: #659EC7;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: helvetica, arial;
+    font-size: 16px;
+    margin: 5px;
+    margin-top: 10px;
+}
+a:hover {
+    background-color: #2554C7;
+}
+p   {
+    font-family: helvetica, arial;
+    font-size: 16px;
+    line-height: 25px;
+}
+.text   {
+    display: inline-block;
+    font-family: helvetica, arial;
+    font-size: 16px;
+    line-height: 28px;
+}
+img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+}
+.image  {
+    float: right;
+}
+.container  {
+    display: inline-block;
+    width: 500px;
+}
+table   {
+    text-align: center;
+    width: 500px;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+td  {
+    background-color: #659EC7;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th  {
+    background-color: #95B9C7;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+.oddrow {
+    background-color: #95B9C7;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+.quote  {
+    font-style: italic;
+    display: inline-block;
+    width: 400px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.container2 {
+    display: inline-block;
+    width: 700px;
+    float: right;
+    font-family: helvetica, arial;
+    font-size: 16px;
+    line-height: 28px;
+}
+.list   {
+    display: inline-block;
+    width: 300px;
+    float: left;
+    font-family: helvetica, arial;
+    font-size: 16px;
+    line-height: 28px;
+}
+.site   {
+    display: inline-block;
+    width: 300px;
+    float: right;
+    font-family: helvetica, arial;
+    font-size: 16px;
+    line-height: 28px;
+}
+.red    {
+    display: inline;
+    color: red;
+    font-weight: bold;
+}
