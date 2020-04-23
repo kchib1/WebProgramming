@@ -4,53 +4,61 @@
 <link rel="stylesheet" type="text/css" href="lastFrontierStylesheet.css" media="all" />
 </head>
 <body>
-    
+   
     <div class = "container">
         <div class = "left">
             <div class = "status">
                 <div class = "bold">Status</div><br>
-                Health:<br>
-                Hydration:<br>
-                Hunger:<br>
+                Health: <span id = "health"></span><br>
+                Hydration: <span id = "hydration"></span><br>
+                Hunger: <span id = "hunger"></span><br>
+                Countdown: <span id = "countdown"></span>
             </div>
 
             <div class = "stats">
                 <div class = "bold">Stats</div><br>
-                Days:<br>
-                Food:<br>
-                Water:<br>
-                Ammo:<br>
-                Reputation:<br>
-                Score:<br><br>
+                Days: <span id = "days"></span><br>
+                Food: <span id = "food"></span><br>
+                Water: <span id = "water"></span><br>
+                Ammo: <span id = "ammo"></span><br>
+                Reputation: <span id = "rep"></span><br>
+                Score: <span id = "score"></span><br><br>
             </div>
 
             <div class = "save">
-                <a href="lastFrontier.html" class="button">Save</a>
+                <a class="button" onclick="save()">Save</a>
             </div>
         </div>
 
         <div class = "middle">
             <div class = "canvas">
-                <div class = "bold">Day 0:</div> You wake up by your campfire. You're surrounded by wilderness on all sides. To your <div                 class = "bold">north</div>
-                there is a decrepit trail that winds its way through the forest.
+                <p id = "text">
             </div>
 
             <div class = "controls">
                 <div class = "direction">
                     <div class = "row">
                         <c href="lastFrontier.html" class="button"></c>
-                        <b href="lastFrontier.html" class="button">North</b>
+                        <b class = "button" onclick="MoveNorth()">North</b>
                         <c href="lastFrontier.html" class="button"></c>
                     </div>
                     <div class = "row">
-                        <b href="lastFrontier.html" class="button">West</b>
+                        <b class = "button" onclick="MoveWest()">West</b>
                         <c href="lastFrontier.html" class="button"></c>
-                        <b href="lastFrontier.html" class="button">East</b>
+                        <b class = "button" onclick="MoveEast()">East</b>
                     </div>
                     <div class = "row">
                         <c href="lastFrontier.html" class="button"></c>
-                        <b href="lastFrontier.html" class="button">South</b>
+                        <b class = "button" onclick="MoveSouth()">South</b>
                         <c href="lastFrontier.html" class="button"></c>
+                    </div>
+                </div>
+                <div class = "action">
+                    <div class = "row">
+                        <b class = "button" onclick="consume()">Consume</b>
+                    </div>
+                    <div class = "row">
+                        <b class = "button" onclick="action()"><span id = "action"></span></b>
                     </div>
                 </div>
             </div>
@@ -58,7 +66,14 @@
 
         <div class = "right">
             <div class = "map">
-                <div class = "bold">Map</div>
+                <div class = "bold">Map</div><br>
+                &emsp;&emsp;[&nbsp;]&nbsp;&ensp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;[&nbsp;]<br>
+                &emsp;&emsp;&nbsp;|&nbsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>
+                &emsp;&emsp;[&nbsp;]---[&nbsp;]&nbsp;&nbsp;&ensp;[&nbsp;]---[&nbsp;]<br>
+                &emsp;&emsp;&nbsp;|&nbsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>
+                &emsp;&emsp;[&nbsp;]---[&nbsp;]---[&nbsp;]<br>
+                &emsp;&emsp;&nbsp;&nbsp;&ensp;&emsp;&nbsp;|<br>
+                &emsp;&emsp;&nbsp;&nbsp;&nbsp;&emsp;&nbsp;[&nbsp;]<br>
             </div>
 
             <div class = "inventory">
@@ -68,13 +83,15 @@
                 Cowboy Hat<br>
                 Boots<br>
                 Holster<br>
+                Canteen<br>
+                <span id = "torch"></span><br>
             </div>
 
             <div class = "menu">
-                <a href="lastFrontierMenu.html" class="button">Main Menu</a>
+                <a class="button" onclick="load()">Load</a>
             </div>
         </div>
     </div>
-
+<script type="text/javascript" src="game.js"></script>
 </body>
 </html>    
